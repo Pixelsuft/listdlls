@@ -68,12 +68,12 @@ def download_all():
     result = True
     if not file_exists(joined_32, file_exists_param):
         try:
-            download('http://github.com/Pixelsuft/listdlls/listdlls.exe', joined_32)
+            download('https://github.com/Pixelsuft/listdlls/raw/main/listdlls/Listdlls.exe', joined_32)
         except DownloadError:
             result = False
     if not file_exists(joined_64, file_exists_param):
         try:
-            download('http://github.com/Pixelsuft/listdlls/listdlls64.exe', joined_64)
+            download('https://github.com/Pixelsuft/listdlls/raw/main/listdlls/Listdlls64.exe', joined_64)
         except DownloadError:
             result = False
     return result
