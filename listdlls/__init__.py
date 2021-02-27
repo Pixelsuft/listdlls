@@ -54,8 +54,8 @@ def listdll(process, arc='x86'):
     for i in log[10:-1]:
         result.append(
             (
-                i[:temp_len[0] - 2],
-                i[temp_len[0]: temp_len[0] + temp_len[1] - 2],
+                i[:temp_len[0] - 2].replace(' ', ''),
+                i[temp_len[0]: temp_len[0] + temp_len[1] - 2].replace(' ', ''),
                 i[temp_len[0] + temp_len[1]:]
             )
         )

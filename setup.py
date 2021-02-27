@@ -8,7 +8,7 @@ Get Process Signatures<br />
 
 setup(
     name="listdlls",
-    version="0.0.5",
+    version="1.0.0",
     author="Pixelsuft",
     description="A small example package",
     long_description=long_description,
